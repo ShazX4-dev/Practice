@@ -50,3 +50,41 @@ print("new_message:", new_message)
 
 # Static  Method
 Person.explain()
+
+print("====== Special methods  =======")
+
+# Pyton's most used special methods are below
+# __init__, __new__, __str__, __call__ __getitem__ __eq__ __len__ ...add()
+
+
+class car():
+    # state
+    description = "This class makes cars"
+
+    # constructor
+    def __init__(self, name, year):
+        self.name = name
+        self.year = year
+
+    # method
+    def start_engine(self):
+        print(f"the{self.name} started engine")
+
+    def stop_engine(self):
+        print(f"the{self.name} stopped engine")
+
+    def __str__(self):
+        return f"thecar.name {self.name} was produced in {self.year} year"
+
+    def __call__(self,):
+        print("object called as function")
+
+
+my_car = car("Ferrari", 2026)
+my_car.start_engine()
+my_car.stop_engine()
+
+print("---------")
+your_car = car("Tayota", 2026)
+print(your_car)
+your_car()  # look like a function calling
