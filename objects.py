@@ -20,3 +20,19 @@ print(type(math))
 # OOP 4 CONCEPTS > Abstraction | Encapsulation | Inheritence | Polimorphism
 result1 = math.ceil(97.7)  # Call
 print("result:", result1)
+
+
+print("======= Error handling system =========")
+car_dict = dict(name="Tayota", year=2026, electric=True)
+
+try:
+    result = car_dict["year"]
+    print("result:", result)
+
+
+except KeyError as err:
+    print("No origin state property founds:", err)
+else:
+    print("executed successfully withour errors")
+finally:
+    print("final closing logic")

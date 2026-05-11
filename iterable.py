@@ -23,7 +23,7 @@ name = person_obj.get("name")
 hobby = person_obj.get("hobby")
 print(f"the name: {name}, hobby: {hobby}")
 
-
+# del dict ichida keraksizini delete qiladi
 del person_obj["single"]
 for key in person_obj:
     print(f"the key: {key} => value {person_obj[key]}")
