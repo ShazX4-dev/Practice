@@ -30,9 +30,9 @@ try:
     print("result:", result)
 
 
-except KeyError as err:
+except KeyError as err:  # error sodir bulganda
     print("No origin state property founds:", err)
-else:
+else:  # error sodir bulmaganda
     print("executed successfully withour errors")
-finally:
+finally:  # luboy xolatda
     print("final closing logic")
