@@ -28,3 +28,22 @@ print("result1:", result1)
 
 result2 = greeting('Shoxa')
 print("result2:", result2)
+
+
+print("======= Keyword $ default arguments ======")
+# DEFINE
+
+
+# bu yerda age ga bargument bersak callda yozmasak xam default argument buladi
+def give_greet(name, age=32):
+    print("give_greet is executed")
+    return f"hi {name}, you are {age} rears old"
+
+
+# keyword argument bu aniqlik qilib yozish yani name age id larini yozib argument yozish.
+# CALL
+result3 = give_greet(name="Tom", age="32")
+print("result3:", result3)
+
+result4 = give_greet("John")
+print("result4:", result4)
