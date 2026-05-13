@@ -64,6 +64,6 @@ except Exception as err:
 
 print("owner before:", my_account.holder)  # state
 
-# my_account.change_ownership("Shoxa")
+# GETTER & SETTER
 my_account.holder = "Shoxa"
 print("owner after:", my_account.holder)
