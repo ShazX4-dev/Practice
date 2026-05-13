@@ -6,39 +6,35 @@
 '''
 
 
-print("===== INHERITANCE ======")
-# PARENT > CHILD
-# parent uzini faqat public & protected propertylarini(state, method) farzandiga utgazadi. private utmaydi
+print("===== Polimorphism ======")
 
 
-class Animal:  # father
-    # state
+class Animal:
+
     description = "The class creates animals"
 
-    # constructor
     def __init__(self, voice):
         self.voice = voice
 
-    # method
     def make_voice(self):
         print(f"this animal can make voice: {self.voice}")
 
 
-class Dog(Animal):  # Child
-    # state
+class Dog(Animal):
 
-    # constructor
     def __init__(self, name, sound, voice):
         self.name = name
         self.sound = sound
         super().__init__(voice)
 
-    # method
     def introduce(self):
         print(f"{self.name} says: {self.sound}-{self.sound}")
 
     def protect(self):
         print("yes I can protect you!")
+
+    def make_voice(self):
+        print(f"this {self.name} says {self.sound}")
 
 
 dog = Dog("Rex", "wow", True)
@@ -47,5 +43,7 @@ dog.introduce()
 dog.protect()
 dog.make_voice()
 
-
-print("===== Polimorphism ======")
+print("=============")
+# dog > dog instanse > Animal > object
+a = isinstance(dog, Dog)
+print(f"The result:", {a})
