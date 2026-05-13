@@ -74,6 +74,7 @@ if not is_student:
     print("Welcome here, do u want to be a student?")
 elif is_admin:
     print("Please go to this office")
+# or true qiymatgacha uqiydi agar chap taraf true bulsa qolganlariga qaramaydi.
 elif is_guest or is_parent:
     print("waiting room is over here")
 else:
