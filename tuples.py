@@ -27,3 +27,26 @@ print("after fruits:", fruits)
 # tuple xech qachon berilgan qiymatini uzgartirmaydi
 animals = ("dog", "cat", "fish", "lion")
 tuple_obj = ("MIT", 100, True, None)
+
+
+print("====== Unpacking arguments =======")
+
+groups = ["Mit", "Flexy", "Devex", "Mg"]
+(x, y, z, *z) = groups
+print(f"the x: {x} and y: {y}")
+# *z deb yozsak x bilan y ni uzini alohida qiymatlarini oladi va qolganlarini bita listga taxlaydi
+print("z:", z)
+
+
+# *args > tuple
+def calculate(*args):
+    print("*args >", args)
+    total = 1
+    for x in args:
+        total *= x
+    print(f"the total value: {total}")
+    return total
+
+
+# CALL
+calculate(1, 7, 2, 3)
