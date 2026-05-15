@@ -23,5 +23,7 @@ print("before fruits:", fruits)
 fruits[2] = "melon"
 print("after fruits:", fruits)
 
+
+# tuple xech qachon berilgan qiymatini uzgartirmaydi
 animals = ("dog", "cat", "fish", "lion")
 tuple_obj = ("MIT", 100, True, None)
