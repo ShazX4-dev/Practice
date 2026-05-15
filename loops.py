@@ -58,11 +58,12 @@ print("="*8)
 
 count = 0
 while True:
-    count += 1
+    count += 1  # bu qadamlarni sanash amali tug'ri raqamni nechi urinishda topsa oshani korsatadi
     x = int(input("find number"))
 
     if x == 41:
         print(f"You found number in {count} steps")
+        # while bir necha marta takrorlanadi shuning uchun bu yerga break amalini quyamiz va u tugri raqamdan keyin prosesni tuxtatadi.
         break
     else:
         print("wrong Try again!")
